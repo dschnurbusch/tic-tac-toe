@@ -1,0 +1,99 @@
+/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f0f0f0;
+}
+
+.container {
+	text-align: center;
+}
+
+/* Board styles */
+.board {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cell:hover {
+	background-color: #f0f0f0;
+}
+
+/* Turn display styles */
+.turn-display {
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+}
+
+/* Result display styles */
+.result {
+	margin-top: 20px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #4caf50;
+}
+
+/* Reset button styles */
+button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 18px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+/* Name input styles */
+.name-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.name-inputs input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.name-inputs input:focus {
+    border-color: #45a049;
+}
+
+.name-inputs input::placeholder {
+    color: #999;
+}
